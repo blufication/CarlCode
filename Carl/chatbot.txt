@@ -1,0 +1,12 @@
+what are the general FAQ's ?
+processFAQ.
+List of Today Scheduled Calendar?
+processToday.
+List of Tomorrow’s Scheduled Calendar?
+processTomorrow.
+Get the status for MAHP capitation cycle for this month?
+getstatus.
+Get Calendar of the month.
+Getmonth.
+approval Calendar schedule for waiting for?
+Getapproval.
