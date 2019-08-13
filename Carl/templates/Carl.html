@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
 <head>
-    <meta charset="UTF-8">
-    <title>Carl</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-hey here lokesh
+    <div class="container">
+        <div class="message-header">
+            <div class="header-icon">
+                <img src="{% static 'images/icon.png' %}">
+            </div>
+            <div class="top-head">
+                <h3>Carl</h3>
+                    <h6>at your service...!</h6>
+            </div>
+            <div class="header-info">
+                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="chat-page">
+           <div class="msg-inbox">
+               <div class="chats">
+                   <div class="msg-page" id="msg-page">
+                       <div class="received-chats">
+                           <div class="received-msg">
+                               <div class="received-msg-inbox">
+                                   <p>Hi ! This is Carl from ECAP !</p>
+                                   <span class="in-time">11:01 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="outgoing-chats">
+                           <div class="outgoing-msg">
+                               <div class="outgoing-msg-inbox">
+                                   <p>Hi ! I want to know about LEO report status !</p>
+                                   <span class="out-time">11:02 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="received-chats">
+                           <div class="received-msg">
+                               <div class="received-msg-inbox">
+                                   <p>latest status of LEO is in progress</p>
+                                   <span class="in-time">11:02 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="outgoing-chats">
+                           <div class="outgoing-msg">
+                               <div class="outgoing-msg-inbox">
+                                   <p>Thanks ! any approvals ?</p>
+                                   <span class="out-time">11:03 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="received-chats">
+                           <div class="received-msg">
+                               <div class="received-msg-inbox">
+                                   <p>no pending Approvals !</p>
+                                   <span class="in-time">11:03 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="outgoing-chats">
+                           <div class="outgoing-msg">
+                               <div class="outgoing-msg-inbox">
+                                   <p>Thanks !</p>
+                                   <span class="out-time">11:03 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="received-chats">
+                           <div class="received-msg">
+                               <div class="received-msg-inbox">
+                                   <p>Thanks have a good day !</p>
+                                   <span class="in-time">11:04 PM | August 8</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="msg-bottom">
+            <div class="test">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="write message....">
+                <div class="input-group-append">
+                    <button class="input-group-text"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
 </body>
-</html>
+<script src="{% static 'js/script.js'%}"></script>
+<script>create_in_html("Js Lokesh");
+        create_out_html("input from text");
+</script>
+</head>
