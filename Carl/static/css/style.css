@@ -54,7 +54,7 @@ border-radius:50px;
 }
 .header-info
 {
-    width: 150px;
+    width: 60px;
     float: right;
     margin-top: -8%;
     margin-right: -15%;
@@ -85,8 +85,9 @@ border-radius:50px;
 }
 .msg-page
 {
-    height:516px;
+    height:522px;
     overflow-y:auto;
+    scroll-behavior: smooth;
 }
 .received-msg
 {
@@ -156,7 +157,7 @@ border-radius:50px;
 .msg-bottom
 {
     position: relative;
-    height: 50px;
+    height: 65px;
     background-color: #007bff;
 }
 .input-group
@@ -167,6 +168,10 @@ border-radius:50px;
     border-radius: 20px;
     width: 100% !important;
     background-color: #fff;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
 }
 .form-control
 {
@@ -178,12 +183,24 @@ border-radius:50px;
     background: transparent !important;
     border: none !important;
     cursor: pointer;
+    outline: none !important;
 }
 .input-group-text:hover
 {
   background-color: RoyalBlue;
 }
+.input-group-text:active
+{
+    outline:none;
+    color : #000;
+}
 .test
 {
-    padding: 6px 24px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-right: 14px;
+    padding-left: 14px;
 }
+
+
+

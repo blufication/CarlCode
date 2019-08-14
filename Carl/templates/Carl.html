@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <head>
-    {% load static %}
+    <title>Carl</title>
 <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -87,9 +87,9 @@
         <div class="msg-bottom">
             <div class="test">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="write message....">
+                <input type="text" id="input" class="form-control" placeholder="write message...." onkeypress="return searchKeyPress(event);">
                 <div class="input-group-append">
-                    <button class="input-group-text"><i class="fa fa-paper-plane"></i></button>
+                    <button class="input-group-text" id="btnSearch" Value="Search" onclick="insert_to_chatbox();"><i class="fa fa-paper-plane"></i></button>
                 </div>
             </div>
                 </div>
@@ -97,7 +97,4 @@
     </div>
 </body>
 <script src="{% static 'js/script.js'%}"></script>
-<script>create_in_html("Js Lokesh");
-        create_out_html("input from text");
-</script>
 </head>
